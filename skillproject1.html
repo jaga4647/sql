@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images.png" type="image/x-icon" />
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" type="text/css">
+    
+    <title>Welcome</title>
+    <style>
+        /*css reset*/
+       
+        body{
+            
+            font-family: 'Fraunces', serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('admin-back1.jpg');
+            background-repeat: no-repeat;
+            background-size: 1895px;
+            color: white;
+        }
+        .left{
+            position:absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            /*border: 2px solid red;*/
+        }
+        .left img{
+            width:95px;
+           filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+            line-height: 19px;
+            font-size: 18px;
+        }
+        .mid{
+            display:block;
+            width: 44%;
+            margin:20px auto;
+            /*border: 2px solid green;*/
+        }
+        .right{
+            position:absolute;
+            right: 34px;
+            top: 50px;
+            display: inline-block;
+           /* border: 2px solid yellow;*/
+        }
+        .btn{
+            font-family: 'Fraunces', serif;
+            margin: 0px 9px;
+            background-color: #757eb6;
+            color: #060d32;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(228, 224, 224);
+        }
+        .navbar{
+            display:inline-block;
+        }
+        .navbar li{
+            font-size: 20px;
+            display: inline-block;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color:#0f111b
+        }
+        .container{
+           /* border: 2px solid white;*/
+            margin:157px 166px;
+            padding:  75px;
+            width:33%;
+            border-radius: 49px;
+        }
+        .form-group input{
+            font-family: 'Fraunces', serif;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 10px auto;
+            font-size: 25px;
+            border-radius: 8px;
+
+        }
+        .container button{
+            display:block;
+            padding: 5px 150px;
+            margin:auto;
+        }
+        .footer{
+           /* background-color: #24262b;*/
+           background: rgba(0, 0, 0, 0.3);
+            padding: 0px 0px;
+            margin: 0px -243px;
+            width: 1525px;
+            height: 50%;
+            position: absolute;
+        }
+        .container1{
+            max-width: 5000px;
+           /* background-color: red;*/
+            margin:50px 50px;
+        }
+        .footer-col{
+            width: 20%;
+            padding: 0px 15px ;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #ffd54f;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #ffffff;
+            padding-left: 8px;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin:0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .footer-col .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+
+        }
+
+        @media(max-width: 767px){
+            .footer-col{
+                width: 50%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+
+            }
+        }
+        @media(max-width: 574px){
+            .footer-col{
+                width: 100%;
+              
+
+            }
+        }
+        
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
+<body>
+    <header class="header">
+
+        <div class="left">
+              <img src="download.png" alt="">
+              <div style="color: rgb(253 156 7)">Unlimited shopping</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="loginskillproject.html">Login</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <!--<li><a href="contactus.html">Contact Us</a></li>-->
+                <li><a href="product.html">Products</a></li>
+                <li><a href="adminpage.html">Admin page</a></li>
+
+               
+            </ul>
+        </div>
+        <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>   
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <h1 style="color: #ff0077">Welcome to online shopping</h1>
+            <form action="loginskillproject.html">
+            <div class="form-group">
+                <input type="text" name="" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Mobile Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Pincode">
+            </div>
+            <button class="btn">Submit</button>
+            <!--<a href='loginskillproject.html'><button>Submit</button></a>-->
+            
+        </form>
+        <br><br>
+  <footer class="footer">
+      <div class="container1">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="contactus.html">contact us</a></li>
+                    <li><a href="contactus.html">Help desk</a></li>
+                    <li><a href="#">customer support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="payment.html">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

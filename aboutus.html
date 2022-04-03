@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images.png" type="image/x-icon" />
+<title>About Us</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  display: inline-block;
+  /*float: left;*/
+  width: 33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px 0px;
+  padding: 0px 0px;
+  text-align: center;
+
+}
+
+.about-section {
+  padding: 60px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+/**.card{
+  height:100px;
+}**/
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <!--<p>Resize the browser window to see that this page is responsive by the way.</p>-->
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+    <img src="img-1.JPG" alt="vamsi" style="width:100%">
+      <div class="container">
+        <h2>Atadi vamsi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>A chief executive officer (CEO) is the highest-ranking executive in a company, whose primary responsibilities include making major corporate decisions, managing the overall operations and resources of a company, acting as the main point of communication between the board of directors (the board) and corporate operations and being the public face of the company. A CEO is elected by the board and its shareholders.</p>
+        <p>atadivamsi@gmail.com.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="img-2.JPG" alt="Neeraj" style="width:100%">
+      <div class="container">
+        <h2>Neeraj Kumar Jami</h2>
+        <p class="title">Designer</p>
+        <p>Graphic designers create visual communications to convey messages in an effective and aesthetically pleasing manner. This incorporates several tasks and responsibilities.Prepares work to be accomplished by gathering information and materials.
+          Plans concept by studying information and materials.
+          Illustrates concept by designing rough layout of art and copy regarding arrangement, size, type size and style, and related aesthetic concepts.</p>
+        <p>neerajjami@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img-3.jpg" alt="kiran" style="width:100%">
+      <div class="container">
+        <h2>Maganti Naga Kiran Sai</h2>
+        <p class="title"> sales Manager</p>
+        <p>The manager is an employee who is responsible for planning, directing, and overseeing the operations and fiscal health of a business unit, division, department, or operating unit within an organization. The manager is responsible for overseeing and leading the work of a group of people in many instances.
+          Any degree subject is acceptablealthough relevant.
+        <p>nagakiran@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="card">
+      <img src="img-4.jpg" alt="Rayudu" style="width: 400px;" height="400px" >
+      <div class="container">
+        <h2>K.Subba Rayudu</h2>
+        <p class="title">Sales executive</p>
+        <p>Sales executives are the key point of contact between an organisation and its clients: answering queries, offering advice and introducing new products.Any degree subject is acceptable, although relevant qualifications are preferred for some positions, particularly within medical or technical sales.</p>
+        <p>rayudu@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
